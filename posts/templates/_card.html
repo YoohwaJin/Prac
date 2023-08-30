@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="card mt-4" style="width:20rem;">
   <div class="card-header">
       <p>
@@ -14,4 +15,20 @@
 
     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
+=======
+<div class="card text-center">
+    <div class="card-header">
+      <p>
+        <img src="{{post.user.profile_image.url}}" alt="" class="rounded-circle" width="50px">
+        <a href="{% url 'accounts:profile' username=post.user %}">{{post.user}}</a>
+        <a href="{% url 'accounts:profile' username=post.user %}" class="text-reset text-decoration-none">{{post.user}}</a>
+      </p>
+    </div>
+    <img src="{{post.image.url}}" alt="...">
+    <div class="card-body">
+      <!--<h5 class="card-title">Special title treatment</h5>-->
+      <p class="card-text">{{post.content}}</p>
+      <p class="card-text">{{post.created_at|timesince}}</p]>
+    </div>
+>>>>>>> 69c9696aa65298f32d0fbf08576ab4de46b5867f
 </div>
